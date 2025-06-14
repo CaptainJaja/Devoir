@@ -6,7 +6,7 @@ Ce dépôt regroupe toutes les ressources à consulter ainsi que les devoirs à 
 
 ## 1. Git / GitHub
 
-* **Tuto vidéo (playlist)** : [https://www.youtube.com/watch?v=3RjQznt-8kE\&list=PL4cUxeGkcC9goXbgTDQ0n\_4TBzOO0ocPR\&index=2](https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=2)
+* **Tuto vidéo ** : [Playlist YouTube](https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=2)
 * **À retenir**
 
   * Familiarisez‑vous avec Git : clonage, branches, commits, pull‑requests.
@@ -17,7 +17,7 @@ Ce dépôt regroupe toutes les ressources à consulter ainsi que les devoirs à 
 
 ## 2. PuTTY
 
-* **Prise en main (vidéo)** : [https://www.youtube.com/watch?v=4YVizsRCQcg](https://www.youtube.com/watch?v=4YVizsRCQcg)
+* **Prise en main ** : [Video](https://www.youtube.com/watch?v=4YVizsRCQcg)
 * Objectif : savoir utiliser PuTTY comme moniteur série pour dialoguer avec votre carte STM32.
 
 ---
@@ -26,8 +26,8 @@ Ce dépôt regroupe toutes les ressources à consulter ainsi que les devoirs à 
 
 | Ressource                              | Contenu                                                                                                                                                                       |
 | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Tuto fonctionnalités                   | [https://www.youtube.com/watch?v=tdRpa7EglGM\&list=PLRhna5\_X7uWv6LsV-2kZWrDOdz\_TsI0UK](https://www.youtube.com/watch?v=tdRpa7EglGM&list=PLRhna5_X7uWv6LsV-2kZWrDOdz_TsI0UK) |
-| Tuto projet Onshape (assemblage, etc.) | [https://www.youtube.com/watch?v=GYkZmE\_6MpY](https://www.youtube.com/watch?v=GYkZmE_6MpY)                                                                                   |
+| Tuto fonctionnalités                   | [Playlist YouTube](https://www.youtube.com/watch?v=tdRpa7EglGM&list=PLRhna5_X7uWv6LsV-2kZWrDOdz_TsI0UK) |
+| Tuto projet Onshape (assemblage, etc.) | [Video YouTube](https://www.youtube.com/watch?v=GYkZmE_6MpY)                                                                                   |
 
 > **À faire** : **Exercice 2** du poly *maker* (*Exercice 3* pour les plus motivés 🔥).
 
@@ -35,12 +35,12 @@ Ce dépôt regroupe toutes les ressources à consulter ainsi que les devoirs à 
 
 ## 4. STM32 : ressources officielles
 
-* **Wiki principal** : [https://wiki.st.com/stm32mcu/wiki/Main\_Page](https://wiki.st.com/stm32mcu/wiki/Main_Page)
+* **Wiki principal** : [ST_Official](https://wiki.st.com/stm32mcu/wiki/Main_Page)
 
 ### 4.1 GPIO
 
-* Guide « Getting started » : [https://wiki.st.com/stm32mcu/wiki/Getting\_started\_with\_GPIO](https://wiki.st.com/stm32mcu/wiki/Getting_started_with_GPIO)
-* Vidéo d'introduction : [https://www.youtube.com/watch?v=TSDS3op91TE](https://www.youtube.com/watch?v=TSDS3op91TE)
+* Guide  : [« Getting started »](https://wiki.st.com/stm32mcu/wiki/Getting_started_with_GPIO)
+* Vidéo d'introduction : [Video avec plus de détails](https://www.youtube.com/watch?v=TSDS3op91TE)
 * Savoir :
 
   * Signification des pin *TTL* / *FT*.
@@ -51,30 +51,30 @@ Ce dépôt regroupe toutes les ressources à consulter ainsi que les devoirs à 
 
 ### 4.2 EXTI (interruptions externes)
 
-* Guide : [https://wiki.st.com/stm32mcu/wiki/Getting\_started\_with\_EXTI](https://wiki.st.com/stm32mcu/wiki/Getting_started_with_EXTI)
+* Guide : [Page_wiki_ST](https://wiki.st.com/stm32mcu/wiki/Getting_started_with_EXTI)
 * À comprendre : configuration de l'EXTI dans CubeMX et gestion dans le code.
 
 ### 4.3 DMA
 
-* Guide : [https://wiki.st.com/stm32mcu/wiki/Getting\_started\_with\_DMA](https://wiki.st.com/stm32mcu/wiki/Getting_started_with_DMA)
-* Vidéo explicative : [https://www.youtube.com/watch?v=zipjCtiHYr8\&t=884s](https://www.youtube.com/watch?v=zipjCtiHYr8&t=884s)
+* Guide : [Page_wiki_ST](https://wiki.st.com/stm32mcu/wiki/Getting_started_with_DMA)
+* Vidéo explicative : [Video YouTube](https://www.youtube.com/watch?v=zipjCtiHYr8&t=884s)
 * À savoir : principe du DMA, configuration et utilisation pour l'UART, l'ADC, etc.
 
 ### 4.4 UART
 
-* Guide : [https://wiki.st.com/stm32mcu/wiki/Getting\_started\_with\_UART](https://wiki.st.com/stm32mcu/wiki/Getting_started_with_UART)
-* Mini‑projet (vidéo) : [https://www.youtube.com/watch?v=dEQwSl8mCFs\&t=2s](https://www.youtube.com/watch?v=dEQwSl8mCFs&t=2s)
+* Guide : [Page_wiki_ST](https://wiki.st.com/stm32mcu/wiki/Getting_started_with_UART)
+* Mini‑projet  : [Video YouTube](https://www.youtube.com/watch?v=dEQwSl8mCFs&t=2s)
 
 ### 4.5 ADC
 
-* Guide : [https://wiki.st.com/stm32mcu/wiki/Getting\_started\_with\_ADC](https://wiki.st.com/stm32mcu/wiki/Getting_started_with_ADC)
-* Mise en pratique : [https://www.youtube.com/watch?v=deMF2xu\_ASQ\&t=108s](https://www.youtube.com/watch?v=deMF2xu_ASQ&t=108s)
+* Guide : [Page_wiki_ST](https://wiki.st.com/stm32mcu/wiki/Getting_started_with_ADC)
+* Mise en pratique : [Video YouTube](https://www.youtube.com/watch?v=deMF2xu_ASQ&t=108s)
 
 ---
 
 ## 5. FreeRTOS
 
-* Introduction vidéo : [https://www.youtube.com/watch?v=OPrcpbKNSjU](https://www.youtube.com/watch?v=OPrcpbKNSjU)
+* Introduction vidéo : [Video YouTube](https://www.youtube.com/watch?v=OPrcpbKNSjU)
 
 ### Questions à maîtriser après visionnage
 
@@ -143,8 +143,6 @@ Ce dépôt regroupe toutes les ressources à consulter ainsi que les devoirs à 
 ### 6.3 Extensions possibles (bonus)
 
 * Table de scores persistante en Flash.
-* Shell FreeRTOS+CLI pour entrer les commandes.
-* Statistiques CPU (`vTaskGetRunTimeStats`).
 * Mode multi‑joueur (classement).
 * Bascule en mode basse consommation entre deux parties.
 
