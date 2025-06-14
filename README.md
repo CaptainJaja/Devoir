@@ -12,6 +12,7 @@ Ce dépôt regroupe toutes les ressources à consulter ainsi que les devoirs à 
   * Familiarisez‑vous avec Git : clonage, branches, commits, pull‑requests.
   * Chaque répertoire doit contenir un **`README.md`** clair et concis.
     → Si vous n'êtes pas à l'aise avec Markdown, demandez à ChatGPT ; il peut générer la mise en forme pour vous.
+    → Chaque commit doit avoir un message : -m  "clair indiquant le principal du changement !"
 
 ---
 
@@ -154,4 +155,158 @@ Ce dépôt regroupe toutes les ressources à consulter ainsi que les devoirs à 
 
 ---
 
-🏁 **Bon travail à tous et bel été !**
+
+
+# Guide de style C pour un code propre et lisible
+
+## 1. Nommage : la première clé de lisibilité
+
+| Élément                                 | Convention courante          | Exemples 📝                                             | Notes                                        |
+| --------------------------------------- | ---------------------------- | ------------------------------------------------------- | -------------------------------------------- |
+| **Constantes & macros**                 | `UPPER_SNAKE_CASE`           | `SIZE_MAX`, `BUFFER_LEN`                                | Préfixe de module si global : `CFG_MAX_SIZE` |
+| **Types (`struct`, `enum`, `typedef`)** | `PascalCase`                 | `typedef struct Node Node;`, `enum Color { Color_Red }` | Évite le suffixe `_t` (réservé par POSIX).   |
+| **Fonctions**                           | `snake_case` ou `PascalCase` | `read_config()`, `ListInit()`                           | Choisir un style et s’y tenir.               |
+| **Variables locales**                   | `lower_snake_case`           | `line_count`, `tmp_buf`                                 | Pas d’abréviations cryptiques.               |
+| **Membres de struct**                   | `lower_snake_case`           | `height`, `next`                                        | Même règle que les variables.                |
+| **Valeurs d’énumération**               | `Prefix_ENUM_VALUE`          | `Color_Red`, `State_Error`                              | Préfixe pour éviter les collisions.          |
+
+---
+
+## 2. Formatage et indentation
+
+```c
+/* 4 espaces ; style K&R recommandé */
+if (cond) {
+    do_something();
+} else {
+    handle_error();
+}
+```
+
+* **Indentation** : 4 espaces (ou TAB partout, mais jamais les deux).
+* **Longueur de ligne** : 80 – 100 caractères max.
+* **Espaces** :
+
+  * après chaque virgule ;
+  * avant l’astérisque des pointeurs dans les déclarations (`char *ptr`) ;
+  * autour des opérateurs.
+* Pas d’espace après `(` ni avant `)`.
+
+---
+
+## 3. Organisation des fichiers
+
+1. **Un module = un duo `file.h` / `file.c`.**
+2. Ordre des `#include` :
+
+   1. Standard C (`<stdio.h>`, `<stdlib.h>`…)
+   2. Bibliothèques tierces (`<third_party/foo.h>`)
+   3. Headers du projet (`"project_local.h"`)
+      (séparés par une ligne vide)
+3. Protéger chaque header :
+
+```c
+#ifndef PROJECT_MODULE_H
+#define PROJECT_MODULE_H
+/* … */
+#endif /* PROJECT_MODULE_H */
+```
+
+Ou `#pragma once` si le compilateur le gère.
+
+---
+
+## 4. Commentaires & documentation
+
+* Explique **pourquoi** (le contexte), pas **quoi** (le code le montre déjà).
+* Format **Doxygen** apprécié :
+
+```c
+/**
+ * @brief Initialise la liste chaînée.
+ * @return 0 en cas de succès, -1 sinon.
+ */
+int list_init(List *list);
+```
+
+---
+
+## 5. Fonctions : clarté et responsabilité unique
+
+| Bonne pratique                            | Raison                               |
+| ----------------------------------------- | ------------------------------------ |
+| Prototype dans le `.h`, code dans le `.c` | Sépare interface/détail.             |
+| **Responsabilité unique**                 | Plus simple à tester et à maintenir. |
+| ≤ 5 paramètres                            | Lisibilité et refactorisation.       |
+| Retour explicite du statut                | `0` = OK, `<0` = erreur.             |
+
+---
+
+## 6. Constantes, macros, `enum` et `static const`
+
+```c
+static const double PI = 3.141592653589793;
+enum { MAX_RETRY = 3 };
+#define SQR(x) ((x) * (x))   /* parenthèses ! */
+```
+
+* **Préférer** `static const` ou `enum` (typés) aux macros pour de simples valeurs.
+* Les macros (`#define`) : uniquement pour le préprocesseur (options de compilation, méta-programming).
+
+---
+
+## 7. Gestion de la mémoire & des ressources
+
+1. **Chaque `malloc` a son `free`** (idéalement dans le même module).
+2. Modèle *acquire-init-use-release* (pattern `goto fail` pour la sortie propre).
+3. Helper : `safe_malloc()`, macros `BUF_FREE(ptr)`…
+
+---
+
+## 8. Sécurité et robustesse
+
+* Compiler avec tous les warnings :
+
+  ```bash
+  -Wall -Wextra -Wpedantic
+  ```
+
+  (`-Werror` en CI pour refuser les warnings)
+* Types fixes : `stdint.h` (`uint32_t`, `int64_t`…).
+* Toujours vérifier les valeurs de retour des I/O (`fread`, `write`, `printf`…).
+* Initialiser toutes les variables.
+
+---
+
+## 9. Tests & CI
+
+* Unit-tests : **Unity**, **Ceedling**, **CMock**, **CTest**…
+* CI automatique : build + tests + analyse statique (`clang-tidy`, `cppcheck`, Coverity) + formatteur (`clang-format`).
+
+---
+
+## 10. Cohérence avant tout !
+
+> Rédige un fichier **`CODING_STYLE.md`**, choisis tes règles, applique-les **partout**.
+> Code homogène = relectures plus rapides, maintenance plus facile, développeurs plus heureux !
+
+---
+
+### Référence express
+
+```text
+• MACROS_ET_CONSTANTES    UPPER_SNAKE_CASE
+• types (struct, enum)    PascalCase
+• fonctions               snake_case
+• variables & champs      lower_snake_case
+• 4 espaces, K&R braces, 80–100 colonnes
+• headers : <stdio.h> puis <lib.h> puis "local.h"
+• #ifndef FOO_H / #define FOO_H / #endif
+• -Wall -Wextra -Wpedantic
+• chaque malloc → free ; vérifier retours
+```
+
+
+
+
+🏁 **Bonne écriture de code, bon travail à tous et bel été !**
