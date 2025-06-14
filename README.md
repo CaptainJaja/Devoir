@@ -11,7 +11,9 @@ Ce dépôt regroupe toutes les ressources à consulter ainsi que les devoirs à 
 
   * Familiarisez‑vous avec Git : clonage, branches, commits, pull‑requests.
   * Chaque répertoire doit contenir un **`README.md`** clair et concis.
+
     → Si vous n'êtes pas à l'aise avec Markdown, demandez à ChatGPT ; il peut générer la mise en forme pour vous.
+
     → Chaque commit doit avoir un message : -m  "clair indiquant le principal du changement !"
 
 ---
