@@ -1,12 +1,12 @@
 # Ressources, tutoriels et devoirs d'été
 
-Ce dépôt regroupe toutes les ressources à consulter ainsi que les devoirs à réaliser pendant l'été pour l'équipe **INFO** (et **MECA** quand indiqué). Chaque répertoire **doit obligatoirement contenir un `README.md`** récapitulant son contenu.
+Ce dépôt regroupe toutes les ressources à consulter ainsi que les devoirs à réaliser pendant l'été pour l'équipe **INFO** et **MECA**. Chaque répertoire **doit obligatoirement contenir un `README.md`** récapitulant son contenu.
 
 ---
 
 ## 1. Git / GitHub
 
-* **Tuto vidéo ** : [Playlist YouTube](https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=2)
+* **Tuto vidéo** : [Playlist YouTube](https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=2)
 * **À retenir**
 
   * Familiarisez‑vous avec Git : clonage, branches, commits, pull‑requests.
