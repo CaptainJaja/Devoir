@@ -1,6 +1,6 @@
 # Ressources, tutoriels et devoirs d'été
 
-Ce dépôt regroupe toutes les ressources à consulter ainsi que les devoirs à réaliser pendant l'été pour l'équipe **INFO** et **MECA**. Chaque répertoire **doit obligatoirement contenir un `README.md`** récapitulant son contenu.
+Ce dépôt regroupe toutes les ressources à consulter ainsi que les devoirs à réaliser pendant l'été pour l'équipe **INFO** et **MECA**. Les PDF sont à regarder. Je vous met le poly qu'avait reçu les 2A de l'option maker cette année pour la méca (donc uniquement obligatoire pour la team méca).
 
 ---
 
@@ -20,7 +20,7 @@ Ce dépôt regroupe toutes les ressources à consulter ainsi que les devoirs à 
 
 ## 2. PuTTY
 
-* **Prise en main ** : [Video](https://www.youtube.com/watch?v=4YVizsRCQcg)
+* **Prise en main** : [Video](https://www.youtube.com/watch?v=4YVizsRCQcg)
 * Objectif : savoir utiliser PuTTY comme moniteur série pour dialoguer avec votre carte STM32.
 
 ---
@@ -57,21 +57,24 @@ Ce dépôt regroupe toutes les ressources à consulter ainsi que les devoirs à 
 * Guide : [Page_wiki_ST](https://wiki.st.com/stm32mcu/wiki/Getting_started_with_EXTI)
 * À comprendre : configuration de l'EXTI dans CubeMX et gestion dans le code.
 
-### 4.3 DMA
-
-* Guide : [Page_wiki_ST](https://wiki.st.com/stm32mcu/wiki/Getting_started_with_DMA)
-* Vidéo explicative : [Video YouTube](https://www.youtube.com/watch?v=zipjCtiHYr8&t=884s)
-* À savoir : principe du DMA, configuration et utilisation pour l'UART, l'ADC, etc.
+### 4.3 TIMER et PWM
+*Vidéo à regarder attentivement : [Tout_sur_PWM](https://www.youtube.com/watch?v=AjN58ceQaF4)
+* À comprendre : configuration des TIMER, PWM, les modes...
 
 ### 4.4 UART
 
 * Guide : [Page_wiki_ST](https://wiki.st.com/stm32mcu/wiki/Getting_started_with_UART)
 * Mini‑projet  : [Video YouTube](https://www.youtube.com/watch?v=dEQwSl8mCFs&t=2s)
 
-### 4.5 ADC
+### 4.5 ADC et DMA
 
-* Guide : [Page_wiki_ST](https://wiki.st.com/stm32mcu/wiki/Getting_started_with_ADC)
-* Mise en pratique : [Video YouTube](https://www.youtube.com/watch?v=deMF2xu_ASQ&t=108s)
+* Guide : [Page_wiki_ST_ADC](https://wiki.st.com/stm32mcu/wiki/Getting_started_with_ADC)
+* Guide : [Page_wiki_ST_DMA](https://wiki.st.com/stm32mcu/wiki/Getting_started_with_DMA)   
+* Vidéo explicative: [Video YouTube](https://www.youtube.com/watch?v=EsZLgqhqfO0)
+* Autre vidéo de mise en pratique DMA: [Video YouTube](https://www.youtube.com/watch?v=zipjCtiHYr8&t=884s)
+* Autre vidéo de mise en pratique ADC : [Video YouTube](https://www.youtube.com/watch?v=deMF2xu_ASQ&t=108s)
+* À savoir : Qu'est-ce que l'ADC, DMA? Principe du DMA, configuration et utilisation pour l'UART, l'ADC, etc.
+
 
 ---
 
