@@ -1,6 +1,6 @@
 # Ressources, tutoriels et devoirs d'été
 
-Ce dépôt regroupe toutes les ressources à consulter ainsi que les devoirs à réaliser pendant l'été pour l'équipe **INFO** et **MECA**. Les PDF sont à regarder. Je vous met le poly qu'avait reçu les 2A de l'option maker cette année pour la méca (donc uniquement obligatoire pour la team méca).
+Ce dépôt regroupe toutes les ressources à consulter ainsi que les devoirs à réaliser pendant l'été pour les équipes **INFO** et **MECA**. Les fichiers PDF sont à lire. Je vous mets également le polycopié que les 2A de l'option Maker ont reçu cette année pour la méca (il est donc uniquement obligatoire pour l’équipe méca).
 
 ---
 
