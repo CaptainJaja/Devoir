@@ -58,7 +58,7 @@ Ce dépôt regroupe toutes les ressources à consulter ainsi que les devoirs à 
 * À comprendre : configuration de l'EXTI dans CubeMX et gestion dans le code.
 
 ### 4.3 TIMER et PWM
-*Vidéo à regarder attentivement : [Tout_sur_PWM](https://www.youtube.com/watch?v=AjN58ceQaF4)
+* Vidéo à regarder attentivement : [Tout_sur_PWM](https://www.youtube.com/watch?v=AjN58ceQaF4)
 * À comprendre : configuration des TIMER, PWM, les modes...
 
 ### 4.4 UART
